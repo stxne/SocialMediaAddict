@@ -22,51 +22,89 @@ a{
 }
 
 .scrollText{
-  border: 1px solid Black;
-  padding-top: 2.5vmin;
-  margin: 0px;
+  padding-top: 2vmin;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  white-space: nowrap;
 }
 
-.scrollText img {
-  width: 100%;
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  -moz-animation: scroll-left 2s linear infinite;
-  -webkit-animation: scroll-left 2s linear infinite;
-  animation: scroll-left 20s linear infinite;
-  }
+.scrollText p {
+  font-family: 'roc-grotesk', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 150px;
+  color: #1DA1F2;
+  position: absolute;
+  white-space: nowrap;
+  height: 100%;
+  margin: 0;
+  line-height: 150px;
+  text-align: center;
+  opacity: 0;
+  /* -moz-transform: translateX(100%); */
+  /* -webkit-transform: translateX(100%); */
+  /* transform: translateX(100%); */
+  -moz-animation: scroll-left 60s linear infinite;
+  -webkit-animation: scroll-left 60s linear infinite;
+  animation: scroll-left 60s linear infinite;
+}
 
-        @-moz-keyframes scroll-left {
-            0% {
-                -moz-transform: translateX(100%);
-            }
-            100% {
-                -moz-transform: translateX(-100%);
-            }
-        }
+    @-moz-keyframes scroll-left {
+      0% {
+        -moz-transform: translateX(0%);
+        opacity: 0;
+      }
+      2% {
+        opacity: 1.0;
+      }
+      98% {
+        opacity: 1.0;
+      }
+      100% {
+        opacity: 0.0;
+        -moz-transform: translateX(-100%);
+      }
+    }
 
-        @-webkit-keyframes scroll-left {
-            0% {
-                -webkit-transform: translateX(100%);
-            }
-            100% {
-                -webkit-transform: translateX(-100%);
-            }
-        }
+    @-webkit-keyframes scroll-left {
+      0% {
+        -webkit-transform: translateX(0%);
+        opacity: 0;
+      }
+      2% {
+        opacity: 1.0;
+      }
+      98% {
+        opacity: 1.0;
+      }
+      100% {
+        opacity: 0.0;
+        -webkit-transform: translateX(-100%);
+      }
+    }
 
-        @keyframes scroll-left {
-            0% {
-                -moz-transform: translateX(100%);
-                -webkit-transform: translateX(100%);
-                transform: translateX(100%);
-            }
-            100% {
-                -moz-transform: translateX(-100%);
-                -webkit-transform: translateX(-100%);
-                transform: translateX(-100%);
-            }
-        }
+    @keyframes scroll-left {
+      0% {
+        -moz-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 0;
+      }
+      2% {
+        opacity: 1.0;
+      }
+      98% {
+        opacity: 1.0;
+      }
+      100% {
+        opacity: 0.0;
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+      }
+    }
 
 h3{
   font-family: 'termina', sans-serif;

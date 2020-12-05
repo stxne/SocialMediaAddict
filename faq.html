@@ -7,24 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/iwb6qtv.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        $('.question').each(function() {
-            var originalDiv = $(this).children('#answer');
 
-
-            $(this).click(function(e) {
-                 originalDiv.toggle();
-                 //$("#changeText").html("-");
-               $('#questionRow').children('button').text(function(st1,st2){
-                if (st2=='-'){return '+'};
-                return '-'
-              })
-            });
-        });
-    });
-
-    </script>
   </head>
   <body>
 
@@ -35,7 +18,7 @@
     </div>
 
     <div class="scrollText">
-      <img src="FREQUENTLY ASKED QUESTIONS..png" alt="">
+      <p>FREQUENTLY ASKED QUESTIONS. FREQUENTLY ASKED QUESTION. FREQUESTLY ASKED QUESTIONS.</p>
     </div>
 
     <div class="FAQs">
@@ -43,7 +26,7 @@
       <div class="question">
         <div id="questionRow">
           <h3>HOW DO I KNOW IF I HAVE AN ADDICTION?</h3>
-          <button type="button" id="changeText"> + </button>
+          <button type="button" id="changeText"> <span> + </span> </button>
         </div>
 
         <div id="answer">
@@ -151,6 +134,22 @@
 
     </footer>
 
+    <script>
+    $(document).ready(function() {
+        $('.question').each(function() {
+            var originalDiv = $(this).children('#answer');
+
+            $(this).click(function(e) {
+                 originalDiv.toggle();
+                 //$("#changeText").html("-");
+               $('#changeText').text(function(st1,st2){
+                if (st2=='-'){return '+'};
+                return '-'
+              })
+            });
+        });
+    });
+    </script>
 
   </body>
 </html>
