@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/iwb6qtv.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.question').each(function() {
+            var originalDiv = $(this).children('#answer');
+
+
+            $(this).click(function(e) {
+                 originalDiv.toggle();
+                 //$("#changeText").html("-");
+               $('#questionRow').children('button').text(function(st1,st2){
+                if (st2=='-'){return '+'};
+                return '-'
+              })
+            });
+        });
+    });
+
+    </script>
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="navLink"><a href="index.html">HOME</a></div>
+      <div class="navLink"><a href="resources.html">RESOURCES</a></div>
+      <div class="navLink"><a href="about.html">ABOUT</a></div>
+    </div>
+
+    <div class="scrollText">
+      <img src="FREQUENTLY ASKED QUESTIONS..png" alt="">
+    </div>
+
+    <div class="FAQs">
+
+      <div class="question">
+        <div id="questionRow">
+          <h3>HOW DO I KNOW IF I HAVE AN ADDICTION?</h3>
+          <button type="button" id="changeText"> + </button>
+        </div>
+
+        <div id="answer">
+          <p>A mental health professional can help you determine whether you truly have social media addiction or just really enjoy using it a lot. But there are a few key differences between social media addiction and a habit that you enjoy. These include: negative effects to your job or school work due to the overuse of social media, increased use during other activities, such as hanging out with friends and family, or while eating, and/ or increased reliance on social media as a way to cope with problems. Check our <a href="resources.html"><span class="blueText">resource</span></a> page to learn more.</p>
+          <a href="https://www.healthline.com/health/social-media-addiction#decreasing-use"><p><span class="blueText">Source: Healthline</span></p></a>
+        </div>
+
+      </div>
+
+      <div class="question">
+        <div id="questionRow">
+          <h3>IS SOCIAL MEDIA ADDICTION TREATABLE?</h3>
+          <button type="button" id="changeText"> + </button>
+        </div>
+
+        <div id="answer">
+          <p>Yes, the condition is very treatable and many have successfully recovered. One of the best ways to break an addiction to social media is to set boundaries and reduce screen-time; however, if the addiction is too severe you may require professional help.</p>
+          <a href="https://www.addictioncenter.com/drugs/social-media-addiction/"><p><span class="blueText">Source: Addiction Center</span></p></a>
+
+        </div>
+
+      </div>
+
+      <div class="question">
+        <div id="questionRow">
+          <h3>HOW TO STAGE AN INTERVENTION?</h3>
+          <button type="button" id="changeText"> + </button>
+        </div>
+
+        <div id="answer">
+          <p>The first step in staging an intervention is contacting an intervention specialist. The intervention professional will keep communication between the parties moving. Intervention specialists help addicted people break their cycle of denial. An intervention specialist is essential to staging a successful intervention. Check our <a href="resources.html"><span class="blueText">resource</span></a> page to learn more.</p>
+          <a href="https://www.addictioncenter.com/drugs/social-media-addiction/"><p><span class="blueText">Source: Addiction Center</span></p></a>
+        </div>
+
+      </div>
+
+      <div class="question">
+        <div id="questionRow">
+          <h3>WHO IS AT RISK OF SOCIAL MEDIA ADDICTION?</h3>
+          <button type="button" id="changeText"> + </button>
+        </div>
+
+        <div id="answer">
+          <p>As more Americans have adopted social media, the social media user base has also grown more representative of the broader population. Young adults were among the earliest social media adopters and continue to use these sites at high levels, but usage by older adults has increased in recent years.</p>
+          <a href="https://www.pewresearch.org/internet/fact-sheet/social-media/"><p><span class="blueText">Source: Pew Research Center</span></p></a>
+        </div>
+
+      </div>
+
+        <div class="question">
+          <div id="questionRow">
+            <h3>IS SOCIAL MEDIA RELATED TO MENTAL HEALTH PROBLEMS?</h3>
+            <button type="button" id="changeText"> + </button>
+          </div>
+
+          <div id="answer">
+            <p>Although social media can allow people to reach out and connect with others, it can also make some people feel worse. Many studies have found an association between time spent on social media as well as the number of social media platforms used, and symptoms of depression and anxiety.7,11 Most of these studies indicate that time spent on social media is correlated with depression and anxiety, but that doesn’t necessarily mean that social media causes these problems.</p>
+            <a href="https://www.center4research.org/social-media-affects-mental-health/"><p><span class="blueText">Source: National Center for Health Research</span></p></a>
+          </div>
+
+        </div>
+
+        <div class="question">
+          <div id="questionRow">
+            <h3>WHY IS SOCIAL MEDIA SO ADDICTING?</h3>
+            <button type="button" id="changeText"> + </button>
+          </div>
+
+          <div id="answer">
+            <p>While social media can seem like mindless and relaxing fun, it actually has a significant effect on your brain. Whenever you log on to your favorite apps, dopamine signals in your brain increase. These neurotransmitters are associated with pleasure. When you experience more dopamine after using social media, your brain identifies this activity as a rewarding one that you ought to repeat. Such a reaction may be more felt whenever you make a post of your own and gain positive feedback. Check our <a href="resources.html"><span class="blueText">resource</span></a> page to learn more.</p>
+            <a href="https://www.healthline.com/health/social-media-addiction#decreasing-use"><p><span class="blueText">Source: Healthline</span></p></a>
+          </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <footer class="footer">
+
+      <div class="email">
+        <h3 id="signUp"><span class="blueText">SIGN UP</span> FOR OUR<br>NEWSLETTER</h3>
+        <input id="email-input" type="text" >
+        <button id="email-button">JOIN</button>
+        <div>
+          <p id="email-output"></p>
+        </div>
+      </div>
+
+      <div class="footerNav">
+        <p><a href="index.html">HOME</a></p>
+        <p><a href="resources.html">RESOURCES</a></p>
+        <p><a href="about.html">ABOUT</a></p>
+        <p><a href="faq.html">FAQ</a></p>
+      </div>
+
+      <div class="quote">
+        <p>WE ARE</p>
+        <p>NOT ON</p>
+        <p>SOCIAL</p>
+        <p>MEDIA</p>
+      </div>
+
+    </footer>
+
+
+  </body>
+</html>
