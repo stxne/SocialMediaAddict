@@ -475,6 +475,11 @@ p{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
+#resources img{
+    border: 1px solid black;
+}
+
 .contentItem{
   border: 1px solid Black;
   text-align: center;
@@ -629,8 +634,4 @@ input, button{
 #answer p{
   font-size: 2.5vmin;
   padding: 0px 8vmin 0px 4.5vmin;
-}
-
-#answer img{
-  border: 1px solid black;
 }
