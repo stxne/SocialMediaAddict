@@ -143,11 +143,11 @@ p{
 }
 
 .graphContent p{
-  text-align: center;
-  font-family: termina, sans-serif;
+  font-family: 'minion-pro', serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.75vmin;
+  text-align: center;
   color: #1DA1F2;
 }
 
